@@ -1,0 +1,81 @@
+.appContainer {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.inputBox button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.inputBox button:hover {
+  background: #0056b3;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.todoItem button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todoItem button:hover {
+  background: #a71d2a;
+}
+
+.loading, .empty, .error {
+  margin: 20px 0;
+  color: #555;
+}
+
+.error {
+  color: #dc3545;
+}
